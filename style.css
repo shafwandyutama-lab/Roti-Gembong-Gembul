@@ -1,0 +1,421 @@
+
+/* =========================
+   RESET DAN DASAR
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: beige;
+    color: saddlebrown;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px 7%;
+    background: floralwhite;
+    border-bottom: 1px solid tan;
+}
+
+.brand h1 {
+    margin: 0;
+    font-size: 22px;
+    line-height: 1.3;
+}
+
+.brand p {
+    margin: 4px 0 0;
+    font-size: 13px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+nav a {
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: chocolate;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.button {
+    display: inline-block;
+    padding: 12px 22px;
+    border: 1px solid saddlebrown;
+    border-radius: 8px;
+    background: saddlebrown;
+    color: floralwhite;
+    font-weight: bold;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.button:hover {
+    background: chocolate;
+    transform: translateY(-2px);
+}
+
+.button-header {
+    white-space: nowrap;
+}
+
+/* =========================
+   HERO
+========================= */
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    min-height: 520px;
+    padding: 60px 7%;
+    overflow: hidden;
+}
+
+.first {
+    flex: 1;
+    max-width: 570px;
+}
+
+.eyebrow {
+    margin: 0 0 12px;
+    color: chocolate;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+#hero h2 {
+    margin: 12px 0 20px;
+    font-size: clamp(38px, 5vw, 64px);
+    line-height: 1.08;
+    letter-spacing: -2px;
+}
+
+.hero-description {
+    max-width: 440px;
+    margin: 0 0 28px;
+    color: #795548;
+    font-size: 17px;
+}
+
+.two {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.two img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+}
+
+.two img:hover {
+    transform: scale(1.04) rotate(10deg);
+}
+
+/* =========================
+   SECTION MENU
+========================= */
+
+#menu {
+    padding: 80px 7%;
+    background: floralwhite;
+}
+
+.section-heading {
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+.section-heading h2,
+#tentang h2,
+#contact h2 {
+    margin: 0 0 12px;
+    font-size: clamp(30px, 4vw, 42px);
+    line-height: 1.2;
+}
+
+.section-heading > p:last-child {
+    margin: 0;
+    color: #795548;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.produk {
+    overflow: hidden;
+    border: 1px solid tan;
+    border-radius: 14px;
+    background: white;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.produk:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px #8b451e20;
+}
+
+.produk > img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    margin: 0 0 8px;
+    font-size: 21px;
+}
+
+.product-info > p {
+    min-height: 48px;
+    margin: 0 0 20px;
+    color: #795548;
+    font-size: 14px;
+}
+
+.product-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.product-bottom strong {
+    font-size: 17px;
+}
+
+.product-bottom .button {
+    padding: 9px 16px;  
+}
+
+/* =========================
+   TENTANG
+========================= */
+
+#tentang {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 7%;
+}
+
+#tentang > p {
+    margin: 0;
+    color: #795548;
+    font-size: 17px;
+}
+
+/* =========================
+   KONTAK
+========================= */
+
+#contact {
+    padding: 70px 7%;
+    background: burlywood;
+    text-align: center;
+}
+
+#contact > p:not(.eyebrow) {
+    margin: 0 0 24px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 22px;
+    background: saddlebrown;
+    color: floralwhite;
+    text-align: center;
+    font-size: 13px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* =========================
+   RESPONSIVE: TABLET
+========================= */
+
+@media (max-width: 900px) {
+    .header {
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    nav {
+        gap: 18px;
+    }
+
+    #hero {
+        gap: 24px;
+        padding: 50px 5%;
+    }
+
+    #hero h2 {
+        font-size: 42px;
+    }
+
+    .product-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* =========================
+   RESPONSIVE: HP
+========================= */
+
+@media (max-width: 600px) {
+    .header {
+        padding: 18px 5%;
+    }
+
+    .brand h1 {
+        font-size: 19px;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .button-header {
+        padding: 9px 12px;
+        font-size: 13px;
+    }
+
+    #hero {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+        padding: 45px 6%;
+    }
+
+    #hero h2 {
+        font-size: 42px;
+        letter-spacing: -1px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .two img {
+        max-width: 360px;
+    }
+
+    #menu {
+        padding: 60px 6%;
+    }
+
+    .product-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .produk > img {
+        height: 240px;
+    }
+
+    #tentang {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 60px 6%;
+    }
+
+    #contact {
+        padding: 60px 6%;
+    }
+}
+
+/* SCROLL REVEAL */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Mengurangi animasi jika pengguna memintanya */
+@media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .reveal.show {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+#plum-petals {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 999;
+}
