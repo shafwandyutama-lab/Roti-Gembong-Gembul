@@ -358,7 +358,6 @@ footer p {
     transform: translateY(0);
 }
 
-/* Mengurangi animasi jika pengguna memintanya */
 @media (prefers-reduced-motion: reduce) {
     .reveal,
     .reveal.show {
