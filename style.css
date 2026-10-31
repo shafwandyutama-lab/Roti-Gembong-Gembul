@@ -1,8 +1,4 @@
 
-/* =========================
-   RESET DAN DASAR
-========================= */
-
 * {
     box-sizing: border-box;
 }
@@ -29,10 +25,6 @@ img {
     display: block;
     max-width: 100%;
 }
-
-/* =========================
-   HEADER
-========================= */
 
 .header {
     display: flex;
@@ -69,10 +61,6 @@ nav a:hover {
     color: chocolate;
 }
 
-/* =========================
-   BUTTON
-========================= */
-
 .button {
     display: inline-block;
     padding: 12px 22px;
@@ -94,10 +82,6 @@ nav a:hover {
 .button-header {
     white-space: nowrap;
 }
-
-/* =========================
-   HERO
-========================= */
 
 #hero {
     display: flex;
@@ -155,10 +139,6 @@ nav a:hover {
 .two img:hover {
     transform: scale(1.04) rotate(10deg);
 }
-
-/* =========================
-   SECTION MENU
-========================= */
 
 #menu {
     padding: 80px 7%;
@@ -241,10 +221,6 @@ nav a:hover {
     padding: 9px 16px;  
 }
 
-/* =========================
-   TENTANG
-========================= */
-
 #tentang {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -259,10 +235,6 @@ nav a:hover {
     font-size: 17px;
 }
 
-/* =========================
-   KONTAK
-========================= */
-
 #contact {
     padding: 70px 7%;
     background: burlywood;
@@ -272,10 +244,6 @@ nav a:hover {
 #contact > p:not(.eyebrow) {
     margin: 0 0 24px;
 }
-
-/* =========================
-   FOOTER
-========================= */
 
 footer {
     padding: 22px;
@@ -288,10 +256,6 @@ footer {
 footer p {
     margin: 0;
 }
-
-/* =========================
-   RESPONSIVE: TABLET
-========================= */
 
 @media (max-width: 900px) {
     .header {
@@ -316,10 +280,6 @@ footer p {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
-
-/* =========================
-   RESPONSIVE: HP
-========================= */
 
 @media (max-width: 600px) {
     .header {
@@ -384,8 +344,6 @@ footer p {
         padding: 60px 6%;
     }
 }
-
-/* SCROLL REVEAL */
 
 .reveal {
     opacity: 0;
